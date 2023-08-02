@@ -31,12 +31,12 @@
         </div>
      </header>
 
-        <main class="contenedor sombra">
+        <main class="contenedor sombra" ac>
             <section>
                 <h2>Contacto</h2>
                     <img class="catalago" src="IMG/estrenos.jpg" alt="con">
                     <br>
-                <form class="formulario">
+                <form class="formulario" action="contacto_formulario.php" method="POST" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Contactános llenando todos los campos</legend>
         
@@ -48,19 +48,19 @@
         
                             <div class="campo">
                                 <label>telefono</label>
-                                <input class="input-text" type="tel"
+                                <input class="input-text" type="tel" name="telefono"
                                  placeholder="Tu Telefono">
                             </div>
         
                             <div class="campo">
                                 <label>Correo</label>
-                                <input class="input-text" type="email" 
+                                <input class="input-text" type="email" name="correo"
                                 placeholder="Tu Email">                
                             </div>
         
                             <div class="campo">
                                 <label>Mensaje</label>
-                                <textarea class="input-text"></textarea>
+                                <textarea class="input-text" name="mensaje"></textarea>
                             </div>
         
                             <div class="alinear-derecha flex">

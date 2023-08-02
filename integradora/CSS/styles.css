@@ -30,6 +30,7 @@ h3 {
 h2 {
    font-size: 2.8rem;
    color: aqua;
+   margin-bottom: 20px;
 }
 h5{
     font-size: 1.5rem;
@@ -180,7 +181,72 @@ h3,h2 {
     color: #ffffff;
 }
 
-/* footer */
+/* movie */
+
+.movies { 
+    padding: 50px 0 0 0;
+     display: flex ;
+    flex-direction: column;
+}
+
+hr {
+    border: 1px solid #ff2f28;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.box-container-1 ,
+.box-container-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.box-1 ,
+.box-2 {
+    border-radius: 5px;
+    /*z-index: 1000;*/
+    display: none;
+}
+
+.content img {
+    height: auto;
+    width: 240px;
+    margin-bottom: 15px;
+    
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4) {
+    display: inline-block;
+}
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4) {
+    display: inline-block;
+}
+
+.load-more {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid #890064;
+    color: #ff2f28;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.load-more:hover {
+    background-color: #ff2f28;
+    color: #ffffff;
+}
+
 
 /* Estilos para el footer */
 footer {
@@ -299,6 +365,11 @@ footer {
         width: 100%;
         text-align: center;
     }
+
+    .movies {
+        padding: 30px;
+    }
+
 }
 
 .N{

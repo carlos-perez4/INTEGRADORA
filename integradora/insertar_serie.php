@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oro Films</title>
+    <link rel="stylesheet" href="CSS/estilos1.css">
 </head>
 <body>
     <center><br/><br/><br/>

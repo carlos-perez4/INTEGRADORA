@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oro Films</title>
+    <link rel="stylesheet" href="CSS/estilos1.css">
 </head>
 <body>
     
@@ -16,8 +17,9 @@
                     $row = $resultado->fetch_assoc();
                 ?>
                 
-                <h3>PELICULAS</h3>
-    <center><br/><br/><br/>
+              
+    <center><br/><br/><br/> 
+     <h3>PELICULAS</h3>
         <form action="proceso_modificar.php?id=<?php echo $row['id']; ?>" method="POST" enctype="multipart/form-data">
             <input type="text" required name="titulo" placeholder="titulo:" value="<?php echo $row['titulo']; ?>"/><br/><br/>
             <img height="90px" src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']);  ?>" alt="" />

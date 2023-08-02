@@ -66,6 +66,63 @@
             <a href="#" class="modal_close">Cerrar Modal</a>
         </div>
      </section>
+
+     <section class="movies container">
+            <h2>PELICULAS</h2>
+            <hr>
+
+            <div class="box-container-1">
+
+                <div class="box-1">
+
+                <div class="content">
+                <?php
+                    include("conexion.php");
+
+                    $query = "SELECT * FROM pelicula";
+                    $resultado = $conexion->query($query);
+                    while($row = $resultado->fetch_assoc()){
+                ?>
+
+                <img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']);  ?>" alt="" />
+                <a href="contenido.php"><?php echo $row['titulo']; ?>  </a>
+                <?php
+                 }
+                
+                ?>
+                </div>
+                </div>
+            </div>
+            <div class="load-more" id="load-more-1">CARGAR MAS</div>
+        </section>
+
+        <section class="movies container">
+            <h2>SERIES</h2>
+            <hr>
+
+            <div class="box-container-2">
+
+                <div class="box-2">
+
+                <div class="content">
+                <?php
+                    include("conexion.php");
+                    $query = "SELECT * FROM serie";
+                    $resultado = $conexion->query($query);
+                    while($row = $resultado->fetch_assoc()){
+                ?>
+                
+                <img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']);  ?>" alt="" />
+                <a href="contenido.php"><?php echo $row['titulo']; ?>  </a>
+                <?php
+                 }
+                
+                ?>
+                </div>
+                </div>
+            </div>
+            <div class="load-more" id="load-more-2">CARGAR MAS</div>
+        </section>
      
      <footer >
      <div class="footer-content">
@@ -99,5 +156,6 @@
      </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

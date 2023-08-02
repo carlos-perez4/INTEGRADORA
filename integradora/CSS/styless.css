@@ -1,3 +1,4 @@
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -52,3 +53,5 @@ th[colspan="2"] a {
     text-decoration: none;
     border-radius: 4px;
 }
+
+
