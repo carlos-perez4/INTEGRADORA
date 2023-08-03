@@ -17,11 +17,20 @@ if (empty($_SESSION["id"])){
 </head>
 <body>
 
-            <main>
+           
+    <header class="#">
+        <div class="back">   
+        <div class="menu container">
+            
             <a href="index.php" class="logo">  Oro Films</a>
             <input type="checkbox" id="menu" />
-        <a href="controlador/controlador_cerrar_sesion.php">Salir</a>
-            </main>
+
+           
+            <a href="index.php" class="btn-1">SALIR</a>
+        </div>
+        </div>
+    </header>   
+            
     <div>
         <center>
              <h3>PELICULAS</h3>

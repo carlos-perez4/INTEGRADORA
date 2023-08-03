@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oro Films</title>
     <link rel="stylesheet" href="CSS/styles.css">
+ 
+    
 </head>
 <body>
      <header class="header">
@@ -20,8 +22,6 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="index.php">Inicio</a></li>
-                    <li><a href="#">Peliculas</a></li>
-                    <li><a href="#">Series</a></li>
                     <li><a href="nosotros.php">Nosotros</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
                 </ul>        
@@ -35,11 +35,11 @@
         <div class="header-content container">
             <div class="header-1">
                 <img src="IMG/venom.png" alt="">
-                <a href="#" class="btn-2">Ver ahora</a>
+                <a href="https://www.youtube.com/watch?v=nZ8FXOpcXSs" class="btn-2">Ver ahora</a>
             </div>
             <div class="header-2">
                 <h1>Las mejores Peliculas </h1>
-                <img src="IMG/play.png" alt="o">
+                
             </div>
         </div>
      </header>
@@ -83,9 +83,9 @@
                     $resultado = $conexion->query($query);
                     while($row = $resultado->fetch_assoc()){
                 ?>
-
-                <img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']);  ?>" alt="" />
-                <a href="contenido.php"><?php echo $row['titulo']; ?>  </a>
+                     <a href="contenido_pelicula.php?id=<?php echo $row['id']; ?>"><img  src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']);  ?>" alt="" > </a>
+                        
+                
                 <?php
                  }
                 
@@ -112,8 +112,7 @@
                     while($row = $resultado->fetch_assoc()){
                 ?>
                 
-                <img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']);  ?>" alt="" />
-                <a href="contenido.php"><?php echo $row['titulo']; ?>  </a>
+                <a href="contenido_serie.php?id=<?php echo $row['id']; ?>"><img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']);  ?>" alt="" /></a> 
                 <?php
                  }
                 
@@ -135,8 +134,6 @@
             <h1>Enlaces</h1>
             <ul>
               <li><a href="index.php">Inicio</a></li>
-              <li><a href="#">Peliculas</a></li>
-              <li><a href="#">Series</a></li>
               <li><a href="nosotros.php">Nosotros</a></li>
               <li><a href="contacto.php">Contacto</a></li>
               <li><a href="http://www.utim.edu.mx/">Utim</a></li>

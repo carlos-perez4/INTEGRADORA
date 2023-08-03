@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&family=Ysabeau+Infant:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.contenedors {
+    max-width: 90%;
+    margin: 15px auto;
+   
+    
+}
+
+.sombras {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48) ;
+    background-color: #c024a64b;
+    padding: 2rem;
+    border-radius: 1rem;
+    width:fit-content ;
+    
+}
+
+
+.resena{
+    display: flex;
+   align-items: center;
+   max-width: 100%;
+    
+}
+
+.resena img{
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 6px;
+   border-color: #890064;
+
+}
+
+ .text-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.text-container h4{
+    margin: 0 0 10px 0;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.text-container span {
+    font-size: 15px;
+    color: #ffffff95;
+    font-family: 'Dai Banna SIL', serif;
+    
+}
+
+.text-container p1{
+   margin: 15px 0 10px 10%;
+   
+}
+
+.text-container p2{
+    margin: -60px 0 10px 50%;
+ }
+
+ .text-container p{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+   margin: 15px ;
+    
+ }
+
+ .text-container h6{
+    margin: 30px 0 0 15px ;
+    font-size: 30px;
+    color: #ffffff95;
+ }
+
+ .text-container h5 {
+    color: #ffffffc2;
+    font-family: 'Bebas Neue', sans-serif;
+ }
+
+ .text-container a{
+    align-items: center;
+ }
+
+ .ver {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid #890064;
+    color: #ff2f28;
+    font-size: 16px;
+    cursor: pointer;
+   
+    
+}
+
+.ver:hover {
+    background-color: #ff2f28;
+    color: #ffffff;
+}
+

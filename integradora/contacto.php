@@ -19,14 +19,12 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="index.php">Inicio</a></li>
-                    <li><a href="#">Peliculas</a></li>
-                    <li><a href="#">Series</a></li>
                     <li><a href="nosotros.php">Nosotros</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
                 </ul>        
                 
             </nav>        
-            <a href="index.php" class="hero__cta">Iniciar Sesión</a>
+            <a href="index.php" class="btn-1">Iniciar Sesión</a>
         </div>
         </div>
      </header>
@@ -85,8 +83,6 @@
             <h1>Enlaces</h1>
             <ul>
               <li><a href="index.php">Inicio</a></li>
-              <li><a href="#">Peliculas</a></li>
-              <li><a href="#">Series</a></li>
               <li><a href="nosotros.php">Nosotros</a></li>
               <li><a href="contacto.php">Contacto</a></li>
               <li><a href="http://www.utim.edu.mx/">Utim</a></li>

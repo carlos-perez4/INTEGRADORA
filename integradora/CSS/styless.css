@@ -1,3 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Menu */
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.back {
+    padding: 35px 0;
+    background-color: #000000ad;
+}
+.logo {
+    font-size: 35px;
+    color: #ffe603;
+}
+
+#menu {
+    display: none;
+}
+
+
+
+.btn-1{
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: rgb(134, 0, 0);
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: .5rem;
+}
+
 
 table {
     width: 100%;
